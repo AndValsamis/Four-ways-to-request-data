@@ -5,7 +5,7 @@ var xhr = document.querySelector("#Xhr");
 var fetch = document.querySelector("#Fetch");
 var jquerry  = document.querySelector("#Jquerry");
 var axios = document.querySelector("#Axios");
-var quote = document.querySelector("#Quotes");
+var quote = document.querySelector("#Quote");
 
 // XHR 
 xhr.addEventListener("click",function(){
@@ -18,5 +18,16 @@ xhr.addEventListener("click",function(){
     xhr2.send();
       });
 
+// Fetch
 
+// JQuerry
+$('#Jquerry').click(function(){
+    $.getJSON(url)
+      .done(function(response){
+       console.log(response);
+      $("#Quote").text(response[0]);
+    })
+  });
 }
+
+// Axios
