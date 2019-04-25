@@ -3,7 +3,7 @@ window.onload=function(){
 var url = "https://ron-swanson-quotes.herokuapp.com/v2/quotes";
 var xhr = document.querySelector("#Xhr");
 var fetch2 = document.querySelector("#Fetch");
-var jquerry  = document.querySelector("#Jquerry");
+// var Jquery  = document.querySelector("#Jquery");
 var axios2 = document.querySelector("#Axios");
 var quote = document.querySelector("#Quote");
 
@@ -31,8 +31,8 @@ fetch2.addEventListener("click",function(){
     })
   });
 
-// JQuerry
-$('#Jquerry').click(function(){
+// Jquery
+$('#Jquery').click(function(){
     $.getJSON(url)
       .done(function(response){
        console.log(response);
