@@ -2,17 +2,18 @@
     margin:5px;
   }
 /* body */
-body {
+html,body {
     margin:0;
-    background-color: aquamarine;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 25%, rgba(0,212,255,1) 100%);
 }
 /* h1 */
 h1 {
-    color:rgb(173, 13, 13);
+    font-family: 'Gugi', cursive;
+    color:rgb(49, 53, 42);
     border-radius: 5px;
-    background-color:rgb(163, 106, 216);
+    background-color:rgb(221, 92, 17);
     text-align: center;
-    font-size:25px;
+    font-size:35px;
     padding:12px;
 }
 /* button container */
@@ -32,12 +33,19 @@ button{
     border-radius: 5px;
     outline: none;
     cursor: pointer;
+    transition:all 0.2s linear;
+}
+button:hover {
+    background-color:rgb(117, 17, 17);
+    transform:scale(1.2);
+    color:rgb(197, 190, 190);
 }
 /* Quote */
 p {
-    color:rgb(173, 13, 13);
+    font-family: 'Gugi', cursive;
+    color:rgb(204, 197, 197);
     border-radius: 5px;
-    background-color: rgb(163, 106, 216);
+    background-color: rgb(221, 92, 17);
     text-align: center;
     font-size:20px;
     padding:8px;
